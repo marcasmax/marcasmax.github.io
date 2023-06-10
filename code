@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Subir y descargar archivos</title>
+</head>
+<body>
+  <h1>Subir y descargar archivos</h1>
+
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="Subir archivo" name="submit">
+  </form>
+
+  <h2>Archivos disponibles para descargar:</h2>
+  <ul>
+    <li><a href="/uploads/file1.pdf">Archivo 1</a></li>
+    <li><a href="/uploads/file2.jpg">Archivo 2</a></li>
+    <li><a href="/uploads/file3.txt">Archivo 3</a></li>
+  </ul>
+</body>
+</html>
